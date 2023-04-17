@@ -1,0 +1,43 @@
+// nav
+
+@media (width >= 768px) {
+	.nav {
+		height: 120px;
+
+		&__logo {
+			font-size: 6rem;
+		}
+
+		&__burger-btn {
+			padding: 0 4rem;
+			font-size: 6rem;
+		}
+		&__mobile-links {
+			&-link {
+				padding: 2rem;
+				font-size: 3.8rem;
+			}
+		}
+	}
+
+	.nav .big-wrapper {
+		padding-left: 4rem;
+	}
+
+// header 
+
+	.header {
+		&__box-text {
+			padding:0 4rem;
+			&-title {
+				font-size: 2rem;
+			}
+
+			&-text {
+				font-size: 3.2rem;
+			}
+
+		
+		}
+	}
+}

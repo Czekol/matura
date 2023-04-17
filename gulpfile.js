@@ -71,20 +71,13 @@ function startBrowserSync(done) {
 		server: {
 			baseDir: './',
 		},
+		notify: false
 	});
 
 	done();
 }
 
-function startBrowserSync(done) {
-	browserSync.init({
-		server: {
-			baseDir: './',
-		},
-	});
 
-	done();
-}
 
 function watchForChanges(done) {
 	watch('./*.html').on('change', reload);

@@ -14,3 +14,9 @@ po kliknięciu "Oferta" w nawigacji strona zjechała na sekcję "Oferta" na stro
 po zjechaniu na sekcję "Oferta" był odnośnik do podstrony z innymi ofertami (niestety grafik nie dodał tego do makiety, sam/a musisz to "zaprojektować"),
 na podstronie "Kontakt" ma być formularz kontaktowy oraz mapa z Google Maps wskazująca na restaurację McDonald's na ul. Jasnogórskiej 2 w Krakowie (to dla niego bardzo ważne),
 na jego stronie pojawiły się darmowe ikonki (np. ✔️ w kartach z ofertą, ✉️ w formularzu kontaktowym itd.).
+
+do zrobienia 
+- naprawienie by mobile links nie wyciekaly  
+- scrollspy na wersji mobilnej i desktopowej 
+- naprawic by nie moc scrolowac podczas otwierania hamburgerowego menu 
+- header obczajic fw i naprawic by tabem wykrywalo text i title 

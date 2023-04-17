@@ -1,0 +1,87 @@
+@use 'colors' as color;
+
+.nav {
+	display: flex;
+	align-items: center;
+	background-color: color.$white;
+	height: 80px;
+
+	&__logo {
+		font-size: 3.6rem;
+		&-icon {
+			color: color.$gray;
+		}
+		&-text {
+			line-height: 1.5;
+			color: color.$black;
+			font-weight: 500;
+		}
+	}
+
+	&__burger-btn {
+		padding: 0 1.5rem;
+		color: color.$black;
+		font-size: 3.6rem;
+		z-index: 100;
+		&.rotate-burger-btn {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__shadow {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #0000006f;
+		opacity: 0;
+		transition: 0.3s;
+
+		&.show-shadow {
+			opacity: 1;
+			z-index: 5;
+		}
+	}
+	&__mobile-links {
+		position: absolute;
+		top: 0;
+		left: 40%;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		background-color: color.$white;
+		transform: translateX(100%);
+		text-align: left;
+		transition: transform 0.3s;
+		z-index: 10;
+
+		&-link {
+			&:first-child {
+				margin-top: clamp(100px, 15vh, 200px);
+			}
+			padding: 2rem;
+			font-size: 2.5rem;
+
+			a {
+				color: color.$black;
+			}
+		}
+
+		&.show-links {
+			transform: translateX(0%);
+		}
+	}
+
+	&__desktop-links {
+		display: none;
+	}
+}
+
+.nav .big-wrapper {
+	padding-left: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
