@@ -2,5 +2,6 @@
 @use 'colors' as color ;
 @use 'style';
 @use 'nav';
+@use './rwd/small';
 @use './rwd/medium';
 @use './rwd/large';

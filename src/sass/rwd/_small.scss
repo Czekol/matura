@@ -1,0 +1,13 @@
+@media (width >= 576px) {
+	.about-us {
+		&__box {
+			&-img {
+				width: 70%;
+			}
+
+			&-title {
+				text-align: center;
+			}
+		}
+	}
+}

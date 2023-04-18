@@ -19,4 +19,7 @@ do zrobienia
 - naprawienie by mobile links nie wyciekaly  
 - scrollspy na wersji mobilnej i desktopowej 
 - naprawic by nie moc scrolowac podczas otwierania hamburgerowego menu 
-- header obczajic fw i naprawic by tabem wykrywalo text i title 
+- ogarnac te dziwne paddingi w nav desktop ze nie kazde ma te sama width 
+- naprawic clampy z height
+- pof z tym zaslanianiem  
+

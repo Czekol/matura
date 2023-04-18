@@ -1,11 +1,16 @@
 @use 'colors' as color;
 
 .nav {
+	// position: fixed;
+	// top: 0;
+	// width: 100%;
+
+	
+	z-index: 100;
 	display: flex;
 	align-items: center;
 	background-color: color.$white;
-	height: 80px;
-
+	overflow: hidden;
 	&__logo {
 		font-size: 3.6rem;
 		&-icon {
@@ -19,7 +24,7 @@
 	}
 
 	&__burger-btn {
-		padding: 0 1.5rem;
+		padding: 0 3.2rem;
 		color: color.$black;
 		font-size: 3.6rem;
 		z-index: 100;
@@ -29,7 +34,6 @@
 	}
 
 	&__shadow {
-		z-index: -1;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -37,6 +41,7 @@
 		bottom: 0;
 		background-color: #0000006f;
 		opacity: 0;
+		z-index: -1;
 		transition: 0.3s;
 
 		&.show-shadow {
@@ -54,7 +59,6 @@
 		flex-direction: column;
 		background-color: color.$white;
 		transform: translateX(100%);
-		text-align: left;
 		transition: transform 0.3s;
 		z-index: 10;
 
@@ -81,7 +85,9 @@
 }
 
 .nav .big-wrapper {
-	padding-left: 1.5rem;
+
+	padding-left: 3.2rem;
 	display: flex;
 	justify-content: space-between;
 }
+

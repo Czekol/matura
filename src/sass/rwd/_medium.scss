@@ -2,42 +2,57 @@
 
 @media (width >= 768px) {
 	.nav {
-		height: 120px;
+		height: 90px;
 
 		&__logo {
-			font-size: 6rem;
+			font-size: 5.2rem;
 		}
 
 		&__burger-btn {
-			padding: 0 4rem;
-			font-size: 6rem;
+			font-size: 5.2rem;
 		}
 		&__mobile-links {
 			&-link {
 				padding: 2rem;
-				font-size: 3.8rem;
+				font-size: 3.6rem;
 			}
 		}
 	}
 
-	.nav .big-wrapper {
-		padding-left: 4rem;
-	}
-
-// header 
+	// header
 
 	.header {
 		&__box-text {
-			padding:0 4rem;
 			&-title {
-				font-size: 2rem;
+				font-size: 2.2rem;
 			}
 
 			&-text {
-				font-size: 3.2rem;
+				font-size: 3.5rem;
 			}
+		}
+	}
 
-		
+	.about-us {
+		&__heading {
+			font-size: 2.8rem;
+		}
+
+		&__box {
+
+			&-img {
+				width: 50%;
+			}
+			&-text {
+				&-title {
+					margin: 2rem 0 1rem;
+					font-size: 2.6rem;
+				}
+
+				&-text {
+					font-size: 1.8rem;
+				}
+			}
 		}
 	}
 }

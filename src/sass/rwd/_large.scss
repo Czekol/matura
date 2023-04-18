@@ -2,7 +2,6 @@
 
 @media (width >= 992px) {
 	.nav {
-		height: 90px;
 		&__logo {
 			display: flex;
 			justify-content: center;
@@ -19,12 +18,12 @@
 			height: 100%;
 
 			&-link {
-				padding: 1rem 3rem;
+				padding: 1rem 2.2rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				font-size: 1.6rem;
-				transition: background-color .3s;
+				transition: background-color 0.3s;
 
 				&:last-child {
 					padding-right: 3rem;
@@ -40,34 +39,59 @@
 
 				a {
 					color: color.$black;
-					transition: color .3s;
+					transition: color 0.3s;
 				}
 			}
 		}
 	}
 
 	.nav .big-wrapper {
-		padding: 0 1rem 0 4rem;
+		padding: 0 1rem 0 3.2rem;
 		height: 100%;
 	}
 
-	// Header 
+	// Header
 
 	.header {
-	background-image: url('/dist/img/desktop-stairs.jpg');
-	height: clamp(350px, 25vh, 400px);
-	
+		background-image: url('/dist/img/desktop-stairs.jpg');
+		height: clamp(400px, 25vh, 400px);
+
 		&__box-text {
-			padding:0 4rem;
 			&-title {
-				font-size: 2.2rem;
+				font-size: 2.3rem;
 			}
 
 			&-text {
 				font-weight: 700;
-				font-size: 3.4rem;
-			}		
+				font-size: 4rem;
+			}
 		}
 	}
 
+	.about-us {
+		&__heading {
+			font-size: 3.2rem;
+			padding-bottom: 2.5rem;
+		}
+
+		&__box {
+			justify-content: space-between;
+			flex-direction: row;
+
+			&-img {
+				height: auto;
+				margin-right: 4rem;
+			}
+			
+			&-text {
+				&-title {
+					font-size: 2.8rem;
+				}
+
+				&-text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
 }
