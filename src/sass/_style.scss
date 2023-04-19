@@ -69,7 +69,7 @@ body {
 .about-us {
 	padding: 4rem 3.2rem;
 	&__heading {
-		margin-bottom: 2rem;
+		margin-bottom: 3.5rem;
 		font-size: 2.4rem;
 		text-align: center;
 		font-weight: 300;
@@ -79,9 +79,8 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		&-img {
-			align-self: center;
+			margin-inline: auto;
 			width: 100%;
-		
 			height: clamp(225px, 25vh, 325px);
 			object-fit: cover;
 		}

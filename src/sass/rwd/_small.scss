@@ -2,11 +2,8 @@
 	.about-us {
 		&__box {
 			&-img {
+				margin: 0;
 				width: 70%;
-			}
-
-			&-title {
-				text-align: center;
 			}
 		}
 	}
