@@ -8,9 +8,9 @@ body {
 	font-weight: 500;
 }
 
-.big-wrapper {
+.wrapper {
 	margin: 0 auto;
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 100%;
 }
 
@@ -56,10 +56,7 @@ body {
 		}
 	}
 
-	.big-wrapper {
-		margin: 0 auto;
-		max-width: 1400px;
-		width: 100%;
+	.wrapper {
 		height: 100%;
 	}
 }
@@ -79,9 +76,8 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		&-img {
-			margin-inline: auto;
 			width: 100%;
-			height: clamp(225px, 25vh, 325px);
+			height: clamp(225px, 26vh, 325px);
 			object-fit: cover;
 		}
 		&-text {
@@ -124,8 +120,33 @@ body {
 	}
 }
 
+// HERO-IMG
+
 .hero-img {
-	width: 100%;
-	height: 300px;
-	background-color: rgb(44, 90, 36);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px; // to height do zmiany
+	background-image: url('/dist/img/mobile-girl.jpg');
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: #ffffff4f;
+	}
+
+	&__box {
+		// max-width: 900px;
+		// width: 100%;
+		border: 3px solid color.$white;
+		&-text {
+			font-size: 3rem;
+		}
+	}
 }
+
+
+// to do zmiany tu duzo bo na odwal to bylo robione losowe jednostki 

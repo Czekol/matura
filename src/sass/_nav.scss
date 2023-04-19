@@ -5,6 +5,7 @@
 	// top: 0;
 	// width: 100%;
 
+	padding: 0 3.2rem;
 	
 	z-index: 100;
 	display: flex;
@@ -24,7 +25,6 @@
 	}
 
 	&__burger-btn {
-		padding: 0 3.2rem;
 		color: color.$black;
 		font-size: 3.6rem;
 		z-index: 100;
@@ -84,9 +84,8 @@
 	}
 }
 
-.nav .big-wrapper {
+.nav .wrapper {
 
-	padding-left: 3.2rem;
 	display: flex;
 	justify-content: space-between;
 }

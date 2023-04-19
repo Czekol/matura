@@ -18,15 +18,15 @@
 			height: 100%;
 
 			&-link {
-				padding: 1rem 2.2rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				width: 100px;
 				font-size: 1.6rem;
 				transition: background-color 0.3s;
 
 				&:last-child {
-					padding-right: 3rem;
+					padding-right: 0rem;
 				}
 
 				&:hover {
@@ -45,8 +45,7 @@
 		}
 	}
 
-	.nav .big-wrapper {
-		padding: 0 1rem 0 3.2rem;
+	.nav .wrapper {
 		height: 100%;
 	}
 
@@ -74,23 +73,45 @@
 
 		&__box {
 			flex-direction: row;
-			justify-content: space-between;
-			align-items: flex-start;
+			// justify-content: space-between;
+			// align-items: flex-start;
 
 			&-img {
-				width: 45%;
 				min-height: 350px;
+				width: calc(50% - 6rem);
+				margin-right: 6rem;
 			}
-
+			
 			&-text {
-				width: 50%;
 				&-title {
 					margin: 0 0 1rem;
 					font-size: 2.8rem;
+					text-align: left;
 				}
 
 				&-text {
 					font-size: 1.8rem;
+					line-height: 1.8;
+				}
+			}
+		}
+	}
+}
+
+@media (width >= 1200px) {
+	.about-us {
+		&__heading {
+			font-size: 3.4rem;
+		}
+
+		&__box {
+			&-text {
+				&-title {
+					font-size: 3rem;
+				}
+
+				&-text {
+					font-size: 2.1rem;
 					line-height: 1.8;
 				}
 			}

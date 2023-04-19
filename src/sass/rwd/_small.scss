@@ -2,8 +2,13 @@
 	.about-us {
 		&__box {
 			&-img {
-				margin: 0;
+				margin-inline: auto;
 				width: 70%;
+			}
+			&-text {
+				&-title {
+					text-align: center;
+				}
 			}
 		}
 	}
