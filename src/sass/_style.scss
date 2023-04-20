@@ -123,30 +123,53 @@ body {
 // HERO-IMG
 
 .hero-img {
+	padding: 0 3.2rem;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px; // to height do zmiany
+	// height: 300px; // to height do zmiany
+	height: clamp(215px, 25vh, 300px);
 	background-image: url('/dist/img/mobile-girl.jpg');
+	background-position: center;
 	&__shadow {
 		position: absolute;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: #ffffff4f;
+		background-color: rgba(0, 0, 0, 0.449);
 	}
 
 	&__box {
-		// max-width: 900px;
-		// width: 100%;
-		border: 3px solid color.$white;
-		&-text {
-			font-size: 3rem;
+		max-width: 960px;
+		width: 100%;
+		border: 2px solid color.$white;
+		z-index: 32;
+		padding: 2rem;
+		&-title {
+			color: color.$white;
+			font-size: 2.5rem;
+			font-weight: 600;
+			text-align: center;
 		}
 	}
 }
 
+// OFFER
 
-// to do zmiany tu duzo bo na odwal to bylo robione losowe jednostki 
+.offers {
+	padding: 6rem 3.2rem;
+	text-align: center;
+
+	&__heading {
+		font-size: 2.4rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		margin: 3rem 0;
+		font-size: 2rem;
+	}
+}

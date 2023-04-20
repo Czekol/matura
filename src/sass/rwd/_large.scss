@@ -73,11 +73,9 @@
 
 		&__box {
 			flex-direction: row;
-			// justify-content: space-between;
-			// align-items: flex-start;
 
 			&-img {
-				min-height: 350px;
+				min-height: 327px;
 				width: calc(50% - 6rem);
 				margin-right: 6rem;
 			}
@@ -96,22 +94,45 @@
 			}
 		}
 	}
+
+
+	.hero-img {
+		padding: 0 3.2rem;
+		min-height: 325px;
+		background-image: url('/dist/img/desktop-girl.jpg');
+	
+
+		&__box {
+			max-width: 960px;
+			width: 100%;
+			padding: 2.6rem;
+			&-title {
+				font-size: 4.5rem;
+			}
+		}
+	}
 }
 
-@media (width >= 1200px) {
+@media (width >= 1220px) {
 	.about-us {
 		&__heading {
 			font-size: 3.4rem;
 		}
 
 		&__box {
+
+			
+			&-img {
+				min-height: 325px;
+	
+			}
 			&-text {
 				&-title {
 					font-size: 3rem;
 				}
 
 				&-text {
-					font-size: 2.1rem;
+					font-size: 1.9rem;
 					line-height: 1.8;
 				}
 			}
