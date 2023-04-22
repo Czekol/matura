@@ -1,6 +1,9 @@
 @use 'colors' as color;
 
 @media (width >= 992px) {
+
+	// NAV
+
 	.nav {
 		&__logo {
 			display: flex;
@@ -66,6 +69,9 @@
 		}
 	}
 
+
+	// ABOUT-US
+
 	.about-us {
 		&__heading {
 			font-size: 3.2rem;
@@ -95,6 +101,7 @@
 		}
 	}
 
+	// HERO-IMG 
 
 	.hero-img {
 		padding: 0 3.2rem;
@@ -113,7 +120,10 @@
 	}
 }
 
-@media (width >= 1220px) {
+@media (width >= 1200px) {
+
+	// ABOUT-US 
+
 	.about-us {
 		&__heading {
 			font-size: 3.4rem;
