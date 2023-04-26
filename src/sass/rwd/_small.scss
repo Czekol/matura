@@ -15,4 +15,14 @@
 			}
 		}
 	}
+
+	// FOOTER
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+			text-align: left;
+		}
+	}
 }

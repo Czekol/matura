@@ -1,7 +1,6 @@
 @use 'colors' as color;
 
 @media (width >= 992px) {
-
 	// NAV
 
 	.nav {
@@ -69,12 +68,11 @@
 		}
 	}
 
-
 	// ABOUT-US
 
 	.about-us {
 		&__heading {
-			font-size: 3.2rem;
+			font-size: 4rem;
 		}
 
 		&__box {
@@ -85,7 +83,7 @@
 				width: calc(50% - 6rem);
 				margin-right: 6rem;
 			}
-			
+
 			&-text {
 				&-title {
 					margin: 0 0 1rem;
@@ -101,40 +99,50 @@
 		}
 	}
 
-	// HERO-IMG 
+	// HERO-IMG
 
 	.hero-img {
-		padding: 0 3.2rem;
 		min-height: 325px;
 		background-image: url('/dist/img/desktop-girl.jpg');
-	
 
 		&__box {
-			max-width: 960px;
-			width: 100%;
 			padding: 2.6rem;
 			&-title {
 				font-size: 4.5rem;
 			}
 		}
 	}
+
+	.offers {
+		&__heading {
+			font-size: 4rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__cards {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+
+		&__card {
+			width: calc(100% / 3 - 3rem);
+			&:last-child {
+				margin-inline: 0;
+			}
+		}
+	}
 }
 
 @media (width >= 1200px) {
-
-	// ABOUT-US 
+	// ABOUT-US
 
 	.about-us {
-		&__heading {
-			font-size: 3.4rem;
-		}
-
 		&__box {
-
-			
 			&-img {
 				min-height: 325px;
-	
 			}
 			&-text {
 				&-title {
