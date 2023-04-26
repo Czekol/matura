@@ -10,6 +10,10 @@ body {
 	overflow-x: hidden;
 }
 
+.test {
+	background-color: color.$lime;
+}
+
 .wrapper {
 	margin-inline: auto;
 	max-width: 1200px;
@@ -224,6 +228,7 @@ body {
 			color: color.$black;
 			border-radius: 8px;
 			box-shadow: 0px 5px 13px -6px rgba(66, 68, 90, 1);
+			transition: .3s;
 
 			&--cta {
 				background-color: color.$lime;

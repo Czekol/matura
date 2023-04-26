@@ -3,13 +3,15 @@
 .footer {
 	background-color: color.$light-gray;
 
+	.small-wrapper {
+		padding: 6rem 2rem;
+	}
 	&__heading {
 		display: none;
 	}
 
 	&__boxes {
 		text-align: center;
-		padding: 6rem 2rem;
 	}
 
 	&__box {

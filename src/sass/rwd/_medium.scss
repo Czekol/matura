@@ -1,3 +1,5 @@
+@use 'colors' as color;
+
 // nav
 
 @media (width >= 768px) {
@@ -86,7 +88,32 @@
 			width: calc(50% - 2rem);
 
 			&:last-child {
-				margin-inline:  auto;
+				margin-inline: auto;
+			}
+		}
+	}
+
+	// FOOTER
+
+	.footer {
+		.small-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__heading {
+			display: block;
+			font-size: 4rem;
+			font-weight: 400;
+			&-icon {
+				color: color.$gray;
+			}
+		}
+
+		&__box {
+			margin:0 2.5rem;
+
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}
