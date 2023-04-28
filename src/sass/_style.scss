@@ -211,6 +211,7 @@ body {
 				text-align: left;
 
 				&-icon {
+					margin-right: 0.5rem;
 					&--check {
 						color: color.$lime;
 					}
@@ -228,7 +229,7 @@ body {
 			color: color.$black;
 			border-radius: 8px;
 			box-shadow: 0px 5px 13px -6px rgba(66, 68, 90, 1);
-			transition: .3s;
+			transition: 0.3s;
 
 			&--cta {
 				background-color: color.$lime;
