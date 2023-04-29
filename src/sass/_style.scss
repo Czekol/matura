@@ -1,5 +1,9 @@
 @use 'colors' as color;
 
+html {
+	scroll-padding-top: 78px;
+}
+
 body {
 	background-color: color.$white;
 	background-color: #fff;
@@ -10,8 +14,8 @@ body {
 	overflow-x: hidden;
 }
 
-.test {
-	background-color: color.$lime;
+.stop-scrolling {
+	overflow-y: hidden;
 }
 
 .wrapper {
@@ -30,6 +34,7 @@ body {
 
 .header {
 	position: relative;
+	margin-top: 80px;
 	padding: 0 2rem;
 	height: clamp(250px, 30vh, 350px);
 	background-image: url('/dist/img/mobile-stairs.jpg');

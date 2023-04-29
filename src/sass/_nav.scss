@@ -1,17 +1,15 @@
 @use 'colors' as color;
 
 .nav {
-	// position: fixed;
-	// top: 0;
-	// width: 100%;
-
-
+	position: fixed;
+	top: 0;
 	display: flex;
 	align-items: center;
 	padding: 0 2rem;
+	width: 100%;
+	height: 80px;
 	background-color: color.$white;
-	z-index: 100;
-	overflow: hidden;
+	z-index: 9;
 	&__logo {
 		font-size: 3.6rem;
 		&-icon {
@@ -38,23 +36,24 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		height: 100vh;
 		background-color: #0000006f;
 		opacity: 0;
-		z-index: -1;
+		z-index: -81;
 		transition: 0.3s;
-
+		pointer-events: none;
 		&.show-shadow {
 			opacity: 1;
 			z-index: 5;
+			pointer-events: auto;
 		}
 	}
 	&__mobile-links {
 		position: absolute;
 		top: 0;
-		left: 40%;
+		width: 60%;
 		right: 0;
-		bottom: 0;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		background-color: color.$white;
@@ -88,7 +87,3 @@
 	display: flex;
 	justify-content: space-between;
 }
-
-
-
-
