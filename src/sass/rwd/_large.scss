@@ -15,33 +15,31 @@
 			display: none;
 		}
 
-		&__desktop-links {
+		&__desktop {
 			display: flex;
-			height: 100%;
+			// height: 100%;
 
 			&-link {
 				display: flex;
-				align-items: center;
 				justify-content: center;
+				align-items: center;
 				width: 100px;
 				font-size: 1.6rem;
-				transition: background-color 0.3s;
+				transition: background-color 0.3s, color 0.3s;
+				color: color.$black;
 
+				&.active {
+					background-color: color.$black;
+					color: color.$white;
+				}
+				
 				&:last-child {
 					padding-right: 0rem;
 				}
 
 				&:hover {
 					background-color: color.$black;
-				}
-
-				&:hover a {
 					color: color.$white;
-				}
-
-				a {
-					color: color.$black;
-					transition: color 0.3s;
 				}
 			}
 		}
@@ -55,7 +53,7 @@
 
 	.header {
 		background-image: url('/dist/img/desktop-stairs.jpg');
-		min-height: 400px;
+		// min-height: 400px;
 		&__box-text {
 			&-title {
 				font-size: 2.3rem;
@@ -63,7 +61,7 @@
 
 			&-text {
 				font-weight: 700;
-				font-size: 4rem;
+				font-size: 3.8rem;
 			}
 		}
 	}
@@ -77,14 +75,17 @@
 
 		&__box {
 			flex-direction: row;
+			justify-content: flex-start;
 
 			&-img {
-				min-height: 327px;
+				// min-height: 327px;
 				width: calc(50% - 6rem);
 				margin-right: 6rem;
+
 			}
 
 			&-text {
+				width: 50%;
 				&-title {
 					margin: 0 0 1rem;
 					font-size: 2.8rem;
@@ -102,13 +103,13 @@
 	// HERO-IMG
 
 	.hero-img {
-		min-height: 325px;
+		// min-height: 325px;
 		background-image: url('/dist/img/desktop-girl.jpg');
 
 		&__box {
 			padding: 2.6rem;
 			&-title {
-				font-size: 4.5rem;
+				font-size: 3.8rem;
 			}
 		}
 	}
@@ -134,27 +135,26 @@
 			}
 		}
 	}
-
 }
 
 @media (width >= 1200px) {
 	// ABOUT-US
 
-	.about-us {
-		&__box {
-			&-img {
-				min-height: 325px;
-			}
-			&-text {
-				&-title {
-					font-size: 3rem;
-				}
+	// .about-us {
+	// 	&__box {
+	// 		&-img {
+	// 			min-height: 325px;
+	// 		}
+	// 		&-text {
+	// 			&-title {
+	// 				font-size: 3rem;
+	// 			}
 
-				&-text {
-					font-size: 1.9rem;
-					line-height: 1.8;
-				}
-			}
-		}
-	}
+	// 			&-text {
+	// 				font-size: 1.9rem;
+	// 				line-height: 1.8;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

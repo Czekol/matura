@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/498d7c2198.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 
 <body>
-    <nav class="nav">
+
+
+    <nav class="nav scrollspySection">
     <div class="wrapper">
 
         <a href="#" class="nav__logo">
@@ -24,28 +25,28 @@
 
 
         <button class="nav__burger-btn">
-            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-bars-staggered  aria-hidden=”true”"></i>
         </button>
 
-        <div class="nav__shadow"></div>
-        <ul class="nav__mobile-links">
-            <li class="nav__mobile-links-link"><a href="#">Home</a></li>
-            <li class="nav__mobile-links-link"><a href="#about-us">O nas</a></li>
-            <li class="nav__mobile-links-link"><a href="#offers">Oferta</a></li>
-            <li class="nav__mobile-links-link"><a href="#footer">Kontakt</a></li>
-        </ul>
+        <div class="nav__shadow" ></div>
+        <div class="nav__mobile">
+            <a class="nav__mobile-link" href="#">Home</a>
+            <a class="nav__mobile-link" href="#about-us">O nas</a>
+            <a class="nav__mobile-link" href="#offers">Oferta</a>
+            <a class="nav__mobile-link" href="#">Kontakt</a>
+        </div>
 
-        <ul class="nav__desktop-links">
-            <li class="nav__desktop-links-link"><a href="#">Home</a></li>
-            <li class="nav__desktop-links-link"><a href="#about-us">O nas</a></li>
-            <li class="nav__desktop-links-link"><a href="#offers">Oferta</a></li>
-            <li class="nav__desktop-links-link"><a href="#footer">Kontakt</a></li>
-        </ul>
+        <div class="nav__desktop">
+            <a class="nav__desktop-link" href="#">Home</a>
+            <a class="nav__desktop-link" href="#about-us">O nas</a>
+            <a class="nav__desktop-link" href="#offers">Oferta</a>
+            <a class="nav__desktop-link" href="#">Kontakt</a>
+        </div>
 
     </div>
 
 </nav>
-    <header class="header">
+    <header class="header section">
         <div class="header__shadow"></div>
 
         <div class="wrapper">
@@ -58,7 +59,7 @@
 
     <main class="main">
 
-        <section class="about-us" id="about-us">
+        <section class="about-us section white-section scrollspySection" id="about-us">
             <div class="wrapper">
 
                 <h2 class="about-us__heading">O NAS</h2>
@@ -85,7 +86,7 @@
             </div>
         </section>
 
-        <section class="hero-img">
+        <section class="hero-img section">
             <div class="hero-img__shadow"></div>
             <div class="small-wrapper">
                 <div class="hero-img__box">
@@ -96,7 +97,7 @@
 
         </section>
 
-        <section class="offers" id="offers">
+        <section class="offers section white-section scrollspySection" id="offers">
             <div class="small-wrapper">
                 <h2 class="offers__heading">OFERTA</h2>
                 <p class="offers__text">Wybierz jedną z naszych wspaniałych ofert!</p>
@@ -197,7 +198,7 @@
     </main>
 
 
-    <footer class="footer" id="footer">
+    <footer class="footer section scrollspySection" >
     <div class="small-wrapper">
         <h3 class="footer__heading "><i class="fa-solid fa-tree footer__heading-icon"></i> Forest</h3>
         <div class="footer__boxes">
@@ -229,6 +230,8 @@
         Ltd.
     </p>
 </footer>
+
+    <!-- <div style="height: 100vh;"></div> -->
     <script src="/dist/js/script.min.js"></script>
 </body>
 

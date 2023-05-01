@@ -1,5 +1,7 @@
 @use 'colors' as color;
 
+
+
 .nav {
 	position: fixed;
 	top: 0;
@@ -10,6 +12,10 @@
 	height: 80px;
 	background-color: color.$white;
 	z-index: 9;
+
+	&.border-bottom {
+		border-bottom: 1px solid color.$light-gray2;
+	}
 	&__logo {
 		font-size: 3.6rem;
 		&-icon {
@@ -23,6 +29,7 @@
 	}
 
 	&__burger-btn {
+		padding-left: 1.5rem;
 		color: color.$black;
 		font-size: 3.6rem;
 		z-index: 100;
@@ -48,7 +55,7 @@
 			pointer-events: auto;
 		}
 	}
-	&__mobile-links {
+	&__mobile {
 		position: absolute;
 		top: 0;
 		width: 60%;
@@ -62,14 +69,12 @@
 		z-index: 10;
 
 		&-link {
-			&:first-child {
-				margin-top: clamp(100px, 15vh, 200px);
-			}
 			padding: 2rem;
 			font-size: 2.5rem;
 
-			a {
-				color: color.$black;
+			color: color.$black;
+			&:first-child {
+				margin-top: clamp(100px, 15vh, 200px);
 			}
 		}
 
@@ -78,7 +83,7 @@
 		}
 	}
 
-	&__desktop-links {
+	&__desktop {
 		display: none;
 	}
 }
