@@ -7,16 +7,16 @@
 		height: 90px;
 
 		&__logo {
-			font-size: 5.2rem;
+			font-size: 4rem;
 		}
 
 		&__burger-btn {
-			font-size: 5.2rem;
+			font-size: 4rem;
 		}
-		&__mobile-links {
+		&__mobile {
 			&-link {
 				padding: 2rem;
-				font-size: 3.6rem;
+				font-size: 2.8rem;
 			}
 		}
 	}
@@ -24,13 +24,14 @@
 	// header
 
 	.header {
+		margin-top: 90px;
 		&__box-text {
 			&-title {
-				font-size: 2.2rem;
+				font-size: 2rem;
 			}
 
 			&-text {
-				font-size: 3.5rem;
+				font-size: 3.2rem;
 			}
 		}
 	}
@@ -46,7 +47,7 @@
 			}
 			&-text {
 				&-title {
-					font-size: 2.6rem;
+					font-size: 2.8rem;
 				}
 
 				&-text {
@@ -59,8 +60,6 @@
 	// HERO-IMG
 
 	.hero-img {
-		padding: 0 3.2rem;
-
 		&__box {
 			padding: 2.6rem;
 			&-title {
@@ -110,7 +109,7 @@
 		}
 
 		&__box {
-			margin:0 2.5rem;
+			margin: 0 2.5rem;
 
 			&:last-child {
 				margin-right: 0;
