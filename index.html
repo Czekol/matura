@@ -5,54 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUUUUU</title>
+    <title>Park Leśny - Odkryj piękno natury z nami | Forest group</title>
+    <meta name="description" content="Odwiedź nasz park leśny i spędź czas na malowniczych szlakach, ciesząc się pięknością natury oraz obserwując dzikie zwierzęta">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/498d7c2198.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/dist/css/main.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/498d7c2198.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/dist/css/main.min.css">
+<!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+<link rel="preload" fetchpriority="high" as="image" href="../dist/img/mobile-stairs.jpg" type="image/jpg">
 </head>
 
 <body>
 
 
-    <nav class="nav scrollspySection">
+    <nav class="nav">
     <div class="wrapper">
 
-        <a href="#" class="nav__logo">
+        <a href="index.html#" class="nav__logo">
             <p class="nav__logo-text"><i class="fa-solid fa-tree nav__logo-icon"></i> Forest</p>
         </a>
 
 
-        <button class="nav__burger-btn">
-            <i class="fa-solid fa-bars-staggered  aria-hidden=”true”"></i>
+        <button class="nav__burger-btn" aria-label="Hamburger Menu">
+            <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
-        <div class="nav__shadow" ></div>
+        <div class="nav__shadow"></div>
+
         <div class="nav__mobile">
-            <a class="nav__mobile-link" href="#">Home</a>
-            <a class="nav__mobile-link" href="#about-us">O nas</a>
-            <a class="nav__mobile-link" href="#offers">Oferta</a>
-            <a class="nav__mobile-link" href="#">Kontakt</a>
+            <a class="nav__mobile-link nav-link active" href="index.html#home">Home</a>
+            <a class="nav__mobile-link nav-link" href="index.html#about-us">O nas</a>
+            <a class="nav__mobile-link nav-link" href="index.html#offers">Oferta</a>
+            <a class="nav__mobile-link nav-link" href="contact.html">Kontakt</a>
         </div>
 
         <div class="nav__desktop">
-            <a class="nav__desktop-link" href="#">Home</a>
-            <a class="nav__desktop-link" href="#about-us">O nas</a>
-            <a class="nav__desktop-link" href="#offers">Oferta</a>
-            <a class="nav__desktop-link" href="#">Kontakt</a>
+            <a class="nav__desktop-link nav-link active" href="index.html#home">Home</a>
+            <a class="nav__desktop-link nav-link" href="index.html#about-us">O nas</a>
+            <a class="nav__desktop-link nav-link" href="index.html#offers">Oferta</a>
+            <a class="nav__desktop-link nav-link" href="contact.html">Kontakt</a>
         </div>
 
     </div>
 
 </nav>
-    <header class="header section">
+    <header class="header section scrollspySection" id="home">
         <div class="header__shadow"></div>
 
         <div class="wrapper">
-            <div class="header__box-text">
-                <p class="header__box-text-title">Forest Group</p>
-                <h1 class="header__box-text-text">Najpiękniejszy park w Twojej okolicy!</h1>
+            <div class="header__box">
+                <p class="header__box-title">Forest Group</p>
+                <h1 class="header__box-text">Najpiękniejszy park w Twojej okolicy!</h1>
             </div>
         </div>
     </header>
@@ -62,7 +66,7 @@
         <section class="about-us section white-section scrollspySection" id="about-us">
             <div class="wrapper">
 
-                <h2 class="about-us__heading">O NAS</h2>
+                <h2 class="section-heading">O nas</h2>
 
                 <div class="about-us__box">
                     <img src="/dist/img/lake.jpg" alt="Promienie słońca padajace na piękne jezioro wśród lasu"
@@ -99,7 +103,7 @@
 
         <section class="offers section white-section scrollspySection" id="offers">
             <div class="small-wrapper">
-                <h2 class="offers__heading">OFERTA</h2>
+                <h2 class="section-heading">Oferta</h2>
                 <p class="offers__text">Wybierz jedną z naszych wspaniałych ofert!</p>
 
                 <div class="offers__cards">
@@ -191,14 +195,19 @@
                     </div>
 
                 </div>
+                <p class="offers__more-offers"> Planujesz wycieczkie w wieksza ilość osób?&nbsp;
+                <p class="offers__more-offers-box"> Sparawdź <a href="offer.html" class="offers__more-offers-box-link">
+                        resztę Ofert</a></p>
+                </p>
             </div>
+
 
         </section>
 
     </main>
 
 
-    <footer class="footer section scrollspySection" >
+    <footer class="footer">
     <div class="small-wrapper">
         <h3 class="footer__heading "><i class="fa-solid fa-tree footer__heading-icon"></i> Forest</h3>
         <div class="footer__boxes">
@@ -231,7 +240,6 @@
     </p>
 </footer>
 
-    <!-- <div style="height: 100vh;"></div> -->
     <script src="/dist/js/script.min.js"></script>
 </body>
 

@@ -1,22 +1,20 @@
 @use 'colors' as color;
+@use 'mixin' as mixin;
+
 
 html {
 	scroll-padding-top: 78px;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	background-color: color.$white;
-	background-color: #fff;
 	color: color.$black;
 	font-size: 1.6rem;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	overflow-x: hidden;
-}
-
-.active {
-	background-color: color.$black;
-	color: color.$white;
 }
 
 .stop-scrolling {
@@ -35,6 +33,14 @@ body {
 	width: 100%;
 }
 
+.section-heading {
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 // HEADER
 
 .header {
@@ -43,7 +49,7 @@ body {
 	padding: 0 2rem;
 	height: clamp(250px, 40vw, 400px);
 	background-image: url('/dist/img/mobile-stairs.jpg');
-	background-position: center;
+	background-position: 50% 60%;
 	background-size: cover;
 	z-index: 2;
 
@@ -53,16 +59,15 @@ body {
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: rgba(0, 0, 0, 0.596);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 15;
 	}
 
-	&__box-text {
+	&__box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
-		width: 100%;
 		color: color.$white;
 
 		&-title {
@@ -87,19 +92,9 @@ body {
 
 .about-us {
 	padding: 6rem 2rem;
-	&__heading {
-		margin-bottom: 3.5rem;
-		font-size: 3.4rem;
-		text-align: center;
-		font-weight: 300;
-	}
 	&__box {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		&-img {
 			width: 100%;
-			// height: clamp(225px, 26vh, 325px);
 			height: clamp(225px, 32vw, 320px);
 			object-fit: cover;
 		}
@@ -115,29 +110,7 @@ body {
 			}
 
 			&-link {
-				position: relative;
-				color: color.$black;
-				transition: 0.3s;
-
-				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					height: 0;
-					width: 100%;
-					background-color: color.$black;
-					z-index: -1;
-					transition: 0.3s;
-				}
-
-				&:hover::after {
-					height: 100%;
-				}
-
-				&:hover {
-					color: color.$white;
-				}
+				@include mixin.linkAnimation(color.$black, color.$black, color.$white);
 			}
 		}
 	}
@@ -184,14 +157,9 @@ body {
 .offers {
 	padding: 6rem 2rem;
 	text-align: center;
-	&__heading {
-		font-size: 3.4rem;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
-
 	&__text {
-		margin: 1.4rem 0 2rem;
+		// margin: 1.4rem 0 2rem;
+		margin-bottom: 2rem;
 		font-size: 1.7rem;
 	}
 
@@ -203,7 +171,8 @@ body {
 		width: 100%;
 		min-height: 350px;
 		border-radius: 8px;
-		box-shadow: 0px 2px 27px -20px rgb(4, 4, 4);
+		box-shadow: 0px 5px 13px -6px rgba(66, 68, 90, 1);
+
 		margin-top: 4rem;
 		&-title {
 			font-size: 2.4rem;
@@ -239,10 +208,34 @@ body {
 			color: color.$black;
 			border-radius: 8px;
 			box-shadow: 0px 5px 13px -6px rgba(66, 68, 90, 1);
-			transition: 0.3s;
+			transition: .3s;
+
+			&--hover-white {
+				background-color: color.$white !important;
+			}
+			
+			&--hover-green {
+				background-color: color.$lime !important;
+			}
 
 			&--cta {
 				background-color: color.$lime;
+			}
+		}
+	}
+
+	&__more-offers {
+		display: inline-block;
+		margin-top: 2.8rem;
+		font-size: 1.8rem;
+		&-box {
+			display: inline-block;
+			font-size: 1.8rem;
+			white-space: nowrap;
+			&-link {
+
+				font-weight: 600;
+				@include mixin.linkAnimation(color.$lime, color.$lime, color.$white);
 			}
 		}
 	}

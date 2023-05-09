@@ -1,10 +1,10 @@
 @media (width >= 576px) {
-
 	// ABOUT-US
 
 	.about-us {
 		&__box {
 			&-img {
+				display: block;
 				margin-inline: auto;
 				width: 70%;
 			}
